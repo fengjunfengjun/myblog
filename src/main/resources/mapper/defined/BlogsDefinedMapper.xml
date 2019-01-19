@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jike.myblog.dao.defined.BlogDefinedMapper">
+
+
+<select id="getBlogbyPage" resultType="java.util.HashMap">
+    select * from blog
+</select>
+    <select id="getAlLBlog" resultType="java.util.HashMap">
+        select blogId,blogTitle,blogTime from blog
+    </select>
+</mapper>
